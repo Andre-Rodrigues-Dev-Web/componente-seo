@@ -1,0 +1,41 @@
+{
+  "name": "seo-component",
+  "version": "1.0.1",
+  "description": "Custom SEO meta tags component for Next.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "dist/types/index.d.ts",
+  "keywords": [
+    "seo",
+    "meta tags",
+    "next.js",
+    "react"
+  ],
+  "author": "André Laurentino Rodrigues <andrelaurentinomg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run build"
+  }
+}
